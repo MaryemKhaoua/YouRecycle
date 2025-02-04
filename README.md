@@ -5,6 +5,8 @@ RecycleHub is a waste collection management application that connects individual
 
 ---
 
+
+
 ## **Features**
 - **User Authentication:** Simple registration and login for individuals; pre-registered collectors.
 - **Collection Requests:** Create, modify, and delete requests for recyclable materials.
