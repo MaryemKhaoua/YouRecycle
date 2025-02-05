@@ -1,0 +1,251 @@
+{
+  "users": [
+    {
+      "id": "3cb6",
+      "firstName": "Randall",
+      "lastName": "Small",
+      "email": "mowu@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "Incidunt inventore ",
+      "city": "Nam sint beatae minu",
+      "phone": "+1 (414) 478-5409",
+      "birthDate": "1978-07-15",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "be7e",
+      "firstName": "Jescie",
+      "lastName": "Lamb",
+      "email": "wecuq@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "Eos officia et nostr",
+      "city": "Soluta ratione nihil",
+      "phone": "+1 (782) 445-3656",
+      "birthDate": "2019-05-02",
+      "role": "PROFESSIONAL",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "e4df",
+      "firstName": "Rajah",
+      "lastName": "Hernandez",
+      "email": "peji@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "Ut esse eaque debiti",
+      "city": "Non voluptas ut itaq",
+      "phone": "+1 (654) 386-7343",
+      "birthDate": "2003-03-09",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "0107",
+      "firstName": "Cameron",
+      "lastName": "Burnett",
+      "email": "nebokuzyka@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "Non id quam archite",
+      "city": "Iusto ad non fugit ",
+      "phone": "+1 (923) 725-2468",
+      "birthDate": "2004-02-11",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "d999",
+      "firstName": "Thane",
+      "lastName": "Donaldson",
+      "email": "qytifycy@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "Aliquip nemo vel omn",
+      "city": "Explicabo Dolor qui",
+      "phone": "+1 (833) 435-1734",
+      "birthDate": "2014-02-14",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737150742940.jpg"
+    },
+    {
+      "id": "64ed",
+      "firstName": "Idona",
+      "lastName": "Turner",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com",
+      "address": "",
+      "city": "",
+      "phone": "+1 (884) 792-7371",
+      "birthDate": "1999-03-19",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "screencapture-eldorado-co-investor-signup-2025-01-18-22_54_06.png"
+    },
+    {
+      "id": "9e7e",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com"
+    },
+    {
+      "id": "b1f7",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com"
+    },
+    {
+      "id": "dd9d",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com"
+    },
+    {
+      "id": "87ae",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com"
+    },
+    {
+      "id": "b8a8",
+      "email": "wifysyki@mailinator.com",
+      "password": "wifysyki@mailinator.com"
+    },
+    {
+      "id": "6833",
+      "firstName": "Nicholas",
+      "lastName": "Mayer",
+      "email": "bedaqoquq@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "",
+      "city": "",
+      "phone": "+1 (855) 313-8766",
+      "birthDate": "2022-03-23",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737144922796.jpg"
+    },
+    {
+      "id": "087d",
+      "firstName": "Zelda",
+      "lastName": "Winters",
+      "email": "tirodox@mailinator.com",
+      "password": "tirodox@mailinator.com",
+      "address": "",
+      "city": "",
+      "phone": "+1 (768) 574-2531",
+      "birthDate": "1987-05-12",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "3436",
+      "email": "tirodox@mailinator.com",
+      "password": "tirodox@mailinator.com"
+    },
+    {
+      "id": "f45d",
+      "email": "tirodox@mailinator.com",
+      "password": "tirodox@mailinator.com"
+    },
+    {
+      "id": "517e",
+      "firstName": "Jordan",
+      "lastName": "Colon",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com",
+      "address": "",
+      "city": "",
+      "phone": "+1 (312) 993-7062",
+      "birthDate": "1971-07-30",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-04",
+      "profilePicture": "1737378429576.jpg"
+    },
+    {
+      "id": "d4dc",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "0428",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "b5aa",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "74f1",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "c548",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "02a0",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "466f",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "2fff",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "bce5",
+      "email": "fybow@mailinator.com",
+      "password": "fybow@mailinator.com"
+    },
+    {
+      "id": "1263",
+      "firstName": "Alexander",
+      "lastName": "Pope",
+      "email": "turasyma@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "",
+      "city": "",
+      "phone": "+1 (186) 179-9834",
+      "birthDate": "1997-12-01",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-05",
+      "profilePicture": null
+    },
+    {
+      "id": "c6ff",
+      "email": "turasyma@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "a9c8",
+      "firstName": "meryam",
+      "lastName": "khaoua",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com",
+      "address": "",
+      "city": "",
+      "phone": "+212 610929401",
+      "birthDate": "1998-05-14",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-05",
+      "profilePicture": "A_creative_and_professional_portfolio-themed_illus.jpg"
+    },
+    {
+      "id": "ac21",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com"
+    }
+  ],
+  "collectionRequests": [],
+  "pointsSystems": [],
+  "rewardRedemptions": []
+}

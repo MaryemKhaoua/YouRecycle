@@ -1,0 +1,171 @@
+<style>
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+  }
+
+  .card {
+    background: rgba(213, 235, 215, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(4, 225, 33, 0.1);
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  h2 {
+    color: #4caf50;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: #4caf50;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #388e3c;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  button {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #388e3c;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .form-error {
+    color: #d32f2f;
+    font-size: 0.875rem;
+  }
+</style>
+
+<div class="form-container">
+  <div class="card">
+    <div class="text-center mb-8">
+      <h2>Join the Recycling Revolution</h2>
+      <p class="subtitle">Help protect our planet by creating an account today.</p>
+    </div>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="space-y-6">
+      <div class="grid">
+        <div>
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" formControlName="firstName" required>
+          <div *ngIf="registerForm.controls['firstName'].invalid && registerForm.controls['firstName'].touched" class="form-error">
+            First name is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" formControlName="lastName" required>
+          <div *ngIf="registerForm.controls['lastName'].invalid && registerForm.controls['lastName'].touched" class="form-error">
+            Last name is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" required>
+          <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched" class="form-error">
+            A valid email is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" formControlName="password" required>
+          <div *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched" class="form-error">
+            Password is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" formControlName="phone">
+          <div *ngIf="registerForm.controls['phone'].invalid && registerForm.controls['phone'].touched" class="form-error">
+            A valid phone number is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="birthDate">Birth Date</label>
+          <input id="birthDate" type="date" formControlName="birthDate" required>
+          <div *ngIf="registerForm.controls['birthDate'].invalid && registerForm.controls['birthDate'].touched" class="form-error">
+            Birth date is required.
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label>Profile Picture</label>
+        <input type="file" (change)="onFileSelected($event)" accept="image/*">
+      </div>
+
+      <button type="submit" [disabled]="registerForm.invalid">
+        Join the Movement
+      </button>
+    </form>
+
+    <div class="text-center mt-6">
+      <p>Already have an account? <a routerLink="/">Sign In</a></p>
+    </div>
+  </div>
+</div>
