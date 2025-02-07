@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecycleHub - Demandes de Collecte</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .btn-action {
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+        <button type="button" class="btn btn-success" (click)="openCreateModal()" data-bs-toggle="modal" data-bs-target="#requestModal">
+          Créer une demande
+        </button>
+      
+        <!-- Table to display requests -->
+        <table class="table table-striped mt-4">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Poids</th>
+              <th>Adresse</th>
+              <th>Date/Heure</th>
+              <th>Statut</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let request of requests">
+              <td>{{ request.items.join(', ') }}</td>
+              <td>{{ request.estimatedWeight }}g</td>
+              <td>{{ request.address }}</td>
+              <td>{{ request.collectionDate | date: 'dd/MM/yyyy HH:mm' }}</td>
+              <td>
+                <span [ngClass]="getBadgeClass(request.status)">{{ request.status }}</span>
+              </td>
+              <td>
+                <button class="btn btn-primary btn-action" (click)="openEditModal(request)" data-bs-toggle="modal" data-bs-target="#requestModal">Modifier</button>
+                <button class="btn btn-danger btn-action" (click)="deleteRequest(request.id)">Supprimer</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <!-- Modal for creating/editing requests -->
+      <div class="modal fade" id="requestModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ selectedRequest?.id ? 'Modifier' : 'Créer' }} une demande de collecte</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form *ngIf="selectedRequest" #requestForm="ngForm" (ngSubmit)="submitRequest(selectedRequest)">
+                    <div class="mb-3">
+                      <label for="typeDechet" class="form-label">Type de déchet</label>
+                      <select [(ngModel)]="selectedRequest.items" name="items" class="form-select" required multiple>
+                        <option value="Plastique">Plastique</option>
+                        <option value="Verre">Verre</option>
+                        <option value="Papier">Papier</option>
+                        <option value="Métal">Métal</option>
+                      </select>
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="poids" class="form-label">Poids estimé (en grammes)</label>
+                      <input type="number" class="form-control" [(ngModel)]="selectedRequest.estimatedWeight" name="estimatedWeight" required min="1000" />
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="adresse" class="form-label">Adresse de collecte</label>
+                      <input type="text" class="form-control" [(ngModel)]="selectedRequest.address" name="address" required />
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="date" class="form-label">Date et heure de collecte</label>
+                      <input type="datetime-local" class="form-control" [(ngModel)]="selectedRequest.collectionDate" name="collectionDate" required />
+                    </div>
+                  
+                    <div class="mb-3">
+                      <label for="status" class="form-label">Statut</label>
+                      <select [(ngModel)]="selectedRequest.status" name="status" class="form-select" required>
+                        <option value="PENDING">En attente</option>
+                        <option value="CONFIRMED">Confirmée</option>
+                        <option value="COMPLETED">Terminée</option>
+                      </select>
+                    </div>
+                  
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" (click)="closeModal()">Fermer</button>
+                      <button type="submit" class="btn btn-success">Enregistrer</button>
+                    </div>
+                  </form>
+                  
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
