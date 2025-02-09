@@ -461,6 +461,40 @@
       "id": "7606",
       "email": "mym@gmail.com",
       "password": "mym@gmail.com"
+    },
+    {
+      "id": "d856",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com"
+    },
+    {
+      "id": "e6c2",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com"
+    },
+    {
+      "id": "9f73",
+      "firstName": "Sharon",
+      "lastName": "Burton",
+      "email": "xavesuro@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "address": "",
+      "city": "",
+      "phone": "+1 (653) 475-9097",
+      "birthDate": "1986-06-16",
+      "role": "PARTICULAR",
+      "createdAt": "2025-02-08",
+      "profilePicture": null
+    },
+    {
+      "id": "2a57",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com"
+    },
+    {
+      "id": "914f",
+      "email": "mym@gmail.com",
+      "password": "mym@gmail.com"
     }
   ],
   "collectionRequests": [],

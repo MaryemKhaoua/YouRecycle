@@ -1,4 +1,3 @@
-// collection-request.service.ts
 import { Injectable } from '@angular/core';
 import { CollectionRequest } from '../../models/collection-request.model';
 
