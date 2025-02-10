@@ -1,38 +1,56 @@
-# RecycleHub - Waste Collection Management App
+# RecycleHub
 
-## **Project Overview**
-RecycleHub is a waste collection management application that connects individuals with authorized collectors. The system streamlines the recycling process and allows for requests, collection management, and reward points for individuals based on the type of recyclable materials.
+## Overview
+RecycleHub is a Single Page Application (SPA) that connects individuals with certified waste collectors to manage recycling operations. Built with Angular, this platform facilitates waste collection requests, tracking, and rewards users through a points-based system.
 
----
+## Features
 
-## **Features**
-- **User Authentication:** Simple registration and login for individuals; pre-registered collectors.
-- **Collection Requests:** Create, modify, and delete requests for recyclable materials.
-- **Collector Dashboard:** View and accept collection requests based on location.
-- **Request Status Tracking:** Track request status (Pending, Occupied, In Progress, Completed, Rejected).
-- **Points System:** Points awarded for validated recycling based on waste type.
-- **Responsive Design:** Works on both desktop and mobile devices.
+### User Management
+- User registration and authentication system
+- Profile management for both collectors and individuals
+- Profile editing and account deletion capabilities
 
----
+### Collection Request System
+- Create collection requests with waste type specification
+- Support for multiple waste types per request
+- Optional photo upload functionality
+- Weight specification (minimum 1000g required)
+- Date and time slot selection
+- Maximum of 3 simultaneous pending requests
+- Total collection limit of 10kg per request
 
-## **Technologies Used**
-- **Frontend Framework:** Angular 17+ (Standalone Components)
-- **State Management:** NgRx
-- **UI Styling:** Tailwind CSS
-- **Routing & Guards:** Angular Router, Route Guards
-- **Data Persistence:** Local Storage
-- **Reactive Forms:** For form handling and validation
-- **Dependency Injection:** Service-based architecture
+### Collection Process
+- Request status tracking (Pending, Occupied, In Progress, Validated, Rejected)
+- City-based collector assignment
+- On-site validation system
+- Photo documentation capability
 
----
+### Rewards System
+Points attribution per kilogram:
+- Plastic: 2 points
+- Glass: 1 point
+- Paper: 1 point
+- Metal: 5 points
 
-## **Project Structure**
-```
-src/
-├── app/
-│   ├── core/            # Core services and guards
-│   ├── features/        # Feature modules like auth, dashboard, and collectors
-│   ├── shared/          # Shared UI components
-│   └── app-routing.ts   # Routing configuration
-└── environments/        # Environment configurations
-```
+Points can be converted to purchase vouchers:
+- 100 points = 50 Dh voucher
+- 200 points = 120 Dh voucher
+- 500 points = 350 Dh voucher
+
+## Technical Stack
+
+### Core Technologies
+- Angular 17+
+- NgRx for state management
+- RxJS/Observables
+- Bootstrap/Tailwind CSS
+
+### Key Technical Features
+- Dependency Injection
+- Reactive Forms/Template Driven Forms
+- Route Guards and Resolvers
+- Custom Pipes
+- Parent/Child Component Communication
+- Local Storage for data persistence
+- Form Validation with error messaging
+- Responsive Design
